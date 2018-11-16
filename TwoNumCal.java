@@ -14,7 +14,6 @@ public class Main {
             //Menu Function
             menu();
 
-
             System.out.print("Please Enter your choice: ");
             choice1 = input.nextInt();
 
@@ -28,7 +27,6 @@ public class Main {
             else {
                 inputdata();
             }
-
 
             //Menu Choices
             choice(num1,num2,choice1);
