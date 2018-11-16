@@ -2,15 +2,18 @@ package com.company;
 import java.util.Scanner;
 public class Main {
 
-    static int  num1, num2;
+    static double  num1, num2;
     static int choice1;
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+
+
         do {
+
             //Menu Function
             menu();
+
 
             System.out.print("Please Enter your choice: ");
             choice1 = input.nextInt();
@@ -25,6 +28,7 @@ public class Main {
             else {
                 inputdata();
             }
+
 
             //Menu Choices
             choice(num1,num2,choice1);
@@ -47,14 +51,14 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Please Enter your 1st Number: ");
-        num1 = input.nextInt();
+        num1 = input.nextDouble();
 
         System.out.print("Please Enter your 2nd Number: ");
-        num2 = input.nextInt();
+        num2 = input.nextDouble();
 
     }
 
-    public static void choice (int num1, int num2, int choice1) {
+    public static void choice (double num1, double num2, int choice1) {
         if (choice1 == 1) {
             System.out.println("Your result is: " + add(num1,num2) );
         }
@@ -71,19 +75,19 @@ public class Main {
 
 
 
-    public static int add (int num1 , int num2) {
+    public static double add (double num1 , double num2) {
         return num1 + num2;
     }
 
-    public static int sub (int num1 , int num2) {
+    public static double sub (double num1 , double num2) {
         return num1 - num2;
     }
 
-    public static int mult (int num1 , int num2) {
+    public static double mult (double num1 , double num2) {
         return num1 * num2;
     }
 
-    public static int div (int num1 , int num2) {
+    public static double div (double num1 , double num2) {
         return num1 / num2;
     }
 }
