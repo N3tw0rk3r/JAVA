@@ -7,13 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
-
+        
         do {
-
             //Menu Function
             menu();
-
 
             System.out.print("Please Enter your choice: ");
             choice1 = input.nextInt();
@@ -28,7 +25,6 @@ public class Main {
             else {
                 inputdata();
             }
-
 
             //Menu Choices
             choice(num1,num2,choice1);
